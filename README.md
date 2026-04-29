@@ -11,6 +11,9 @@ Useful API references:
 
 ```sh
 npm install eventor-api-sdk
+yarn add eventor-api-sdk
+pnpm add eventor-api-sdk
+bun add eventor-api-sdk
 ```
 
 Node 18 or newer is recommended because the SDK uses the built-in `fetch` API.
