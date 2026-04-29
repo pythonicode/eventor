@@ -252,25 +252,3 @@ try {
 ## Caching
 
 Eventor asks API consumers to cache frequently used data where possible. For example, organisation members may only need to be refreshed daily, while event results may need shorter cache windows during active events. All API requests are logged by Eventor and high request volumes for a single API key may be investigated.
-
-## Publishing
-
-Before publishing, update `package.json` with your final package name, author, repository, and version.
-
-```sh
-npm install
-npm run typecheck
-npm test
-npm run build
-npm run pack:dry-run
-npm login
-npm publish
-```
-
-Follow npm semantic versioning:
-
-- Patch: bug fixes, documentation updates, internal changes.
-- Minor: new endpoints or backwards-compatible options.
-- Major: breaking API or response-shape changes.
-
-For public packages, enable npm two-factor authentication and consider publishing with provenance when your CI environment supports it.
